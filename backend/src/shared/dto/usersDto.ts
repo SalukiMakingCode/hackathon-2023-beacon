@@ -45,3 +45,16 @@ export class UserLoginDto {
   @IsString()
   password: string;
 }
+
+export class UserFullDto {
+  deleteAt?: any;
+  updateAt: Date;
+  createdAt: Date;
+
+  @IsDefined()
+  @IsNumber()
+  id: number;
+
+  @IsString()
+  email: string;
+}
